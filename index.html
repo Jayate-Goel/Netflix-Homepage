@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>NETFLIX</title>
+    <style>
+        body{
+            background-color: rgb(65, 64, 64);
+        }
+    </style>
+  <style>    
+	.maindiv{
+        margin-left:500px;
+        margin-top:0px;
+	width: 30%;
+	height:250px;
+	position:absolute;
+	background-image: url('images/r1.jpg');
+	background-size:100%,100%;
+    box-shadow:1px 2px 10px 5px white;
+    animation:slider 10s infinite linear;
+	}
+    @keyframes slider{
+        0%{background-image: url('images/r2.jpg');}
+        25%{background-image: url('images/r3.jpg');}
+        50%{background-image: url('images/r4.jpg');}
+        75%{background-image: url('images/r5.jpg');}
+        100%{background-image: url('images/r6.jpg');}
+    }
+</style>
+<style>
+    .div2{
+    background-color: black;
+    color: white;
+    width:100%;
+    height: 400px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    padding-top: 100px;
+    padding-left: 230px;
+}
+
+</style>
+
+<style>
+#email,#email-below{
+    height:58px;
+    width: 350px;
+    border-radius: 8px;
+    margin-left: 400px;
+    margin-right: 50px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+#email-below{
+    color:black;
+    margin-left: 100px;
+}
+#netflix{
+    margin-top: 20px;
+    margin-left:100px;
+}
+#accordion
+{   padding-bottom: 20px;
+    font-size: 20px;
+    width: 900px;
+}
+</style>
+</head>
+</head>
+  
+</head>
+<body >
+    <!-- 1st div-->
+    <div class= "div1">
+        <img id = "netflix" src ="images\netflix.png">
+            <span id  ="up">
+                <span id = "lang">
+                    <img src = "images\net.png">
+                    <select>
+                        <option value = "english">English</option>
+                        <option value = "hindi">हिंदी</option>
+                    </select>
+                </span>
+                <button type="button" id = "sign-in" class="btn btn-danger float-right">Sign In</button> 
+            </span>
+            
+
+        <h1>Unlimited movies, TV shows and more</h1>
+        <p>Watch anywhere. Cancel anytime.<br>
+            
+            Ready to watch? Enter your email to create or restart your membership.</p>
+       <span class="forinput">
+            <!-- <input class="form-control w-25 mx-auto" id = "email" type="email" placeholder="Email address" readonly>
+            <button type="button" id = "get-started" class="btn btn-danger">Get Started</button> -->
+            <input type="email" id = "email" placeholder="Email address" size="32">
+            <button type="button" id = "get-started" class="btn btn-danger ">Get Started</button>
+       </span> 
+    </div>
+
+    <!-- 2nd div-->
+    <div class="div2">
+        <div class = "text2" style = "font-size: 25px; ">
+            <h1 style = "font-size:40px; font-weight: bold;">Enjoy on your TV</h1>
+            <p>Watch on smart TVs, PlayStation, Xbox,<br> Chromecast, Apple TV, Blu-ray players and<br> more.</p>
+        </div>
+        <div class="maindiv">
+
+        </div>
+    </div>
+
+    <!-- 3rd div-->
+    <div class  = "div3">
+        <div class = "text3" style = "font-size: 25px; ">
+            <h1 style = "font-size:40px; font-weight: bold;">Download your shows<br> to watch offline</h1>
+            <p>Save your favourites easily and always have <br>something to watch.</p>
+        </div>
+        <img src = "images\div3.png"  >
+        
+    </div>
+
+    <!-- 4th div-->
+    <div class ="div4">
+        <div class = "text4" style = "font-size: 25px; ">
+            <h1 style = "font-size:40px; font-weight: bold;">Watch everywhere</h1>
+            <p>Stream unlimited movies and TV shows on <br>your phone, tablet, laptop, and TV.</p>
+        </div>
+        <!-- YHA PAR VIDEO AAYAGI-->
+        <img src = "images\div4.png">
+    </div>
+ 
+    
+    <!-- 5th div-->
+    <div class ="div5">
+        <div class = "text5" style = "font-size: 25px; " >
+            <h1 style = "font-size:40px; font-weight: bold;">Create profiles for <br>kids</h1>
+            <p>Send children on adventures with their<br> favourite characters in a space made just for <br>them—free with your membership.</p>
+        </div>
+        <img src = "images\div5.png">
+    </div>
+ 
+    <!-- 6th div -->
+    <div class = "div6">
+            <h1>Frequently Asked Questions</h1>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default  bg-secondary p-3 mb-2 text-white">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                    What is Netflix?</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.
+
+                        You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</div>
+                </div>
+                </div>
+                <div class="panel panel-default bg-secondary p-3 mb-2  text-white">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                    How much does Netflix cost?</a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.</div>
+                </div>
+                </div>
+                <div class="panel panel-default p-3 mb-2  bg-secondary text-white">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                    Where can I watch?</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+
+                        You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</div>
+                </div>
+                </div>
+
+                <div class="panel panel-default p-3 mb-2  bg-secondary text-white">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                        How do I cancel?</a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse ">
+                        <div class="panel-body">Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</div>
+                    </div>
+                    </div>
+
+                    <div class="panel panel-default p-3 mb-2  bg-secondary text-white">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                           What can I watch on Netflix?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse ">
+                            <div class="panel-body">Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</div>
+                        </div>
+                        </div>
+
+                        <div class="panel panel-default p-3 mb-2  bg-secondary text-white">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                Is Netflix good for kids?</a>
+                                </h4>
+                            </div>
+                            <div id="collapse6" class="panel-collapse collapse ">
+                                <div class="panel-body">The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space.
+
+                                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</div>
+                            </div>
+                            </div>
+                        
+
+            </div>
+            <div>
+                <h2><p>Ready to watch? Enter your email to create or restart your membership.</p></h2>
+                <span class="forbelowinput">
+                    <input type="email" id = "email-below" placeholder="Email address" size="32">
+                    <button type="button" id = "get-started-below" class="btn btn-danger ">Get Started</button>
+               </span> 
+            </div>
+    </div>      
+    <!-- 7th div -->
+    <div class ="div7">
+        <div class = "links">
+            <p>Questions? Call 000-800-919-1694</p><br><br>
+            <table>
+                <tr>
+                    <td><a href =  "#">FAQ</a></td>
+                    <td><a href =  "#">Help Centre</a></td>
+                    <td><a href =  "#">Account</a></td>
+                </tr>
+                <tr>
+                    <td><a href =  "#">Media Centre</a></td>
+                    <td><a href =  "#">Investor Relations</a></td>
+                    <td><a href =  "#">Jobs</a></td>
+                </tr>
+                <tr>
+                    <td><a href =  "#">Ways to Watch</a></td>
+                    <td><a href =  "#">Terms of Use</a></td>
+                    <td><a href =  "#">Privacy</a></td>
+                </tr>
+                <tr>
+                    <td><a href =  "#">Cookie Preferences</a></td>
+                    <td><a href =  "#">Corporate Information</a></td>
+                    <td><a href =  "#">Contact Us</a></td>
+                </tr>
+                <tr>
+                    <td><a href =  "#">Speed Test</a></td>
+                    <td><a href =  "#">Legal Notices</a></td>
+                    <td><a href =  "#">Only on Netflix</a></td>
+                </tr>
+            </table>
+
+        </div>
+        <span id = "lang-below">
+            <img src = "images\net.png">
+            <select style = "font-size: 16px;">
+                <option value = "english">English</option>
+                <option value = "hindi">हिंदी</option>
+            </select>
+        </span>
+        <h5 style = "color:rgb(159, 157, 157); margin-left:200px; margin-top:20px">Netflix India</h5>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!--
+
+<div class = "slider-frame">
+            <div class = "slide-images">
+                <div class = "img-container">
+                    <img src = "F:\NetFlix\images\r1.jpg">
+                </div>
+                <div class = "img-container">
+                    <img src = "F:\NetFlix\images\r2.jpg">
+                </div>
+                <div class = "img-container">
+                    <img src = "F:\NetFlix\images\r3.jpg">
+                </div>
+                <div class = "img-container">
+                    <img src = "F:\NetFlix\images\r4.jpg">
+                </div>
+            </div>
+        </div>
+
+-->
+
+
+
+
+
+
+
+
+
+<!--
+       <div class = "container">
+        <div class = "wrapper">
+            <img src = "F:\NetFlix\images\r1.jpg">
+            <img src = "F:\NetFlix\images\r2.jpg">
+            <img src = "F:\NetFlix\images\r3.jpg">
+            <img src = "F:\NetFlix\images\r4.jpg">
+        </div>
+    </div>
+ -->
+
+
+<!--     
+
+<style>
+        .slider-frame{
+        overflow:hidden;
+        height:360px;
+        width: 480px;
+        margin: left 360px;
+        margin-top:20px;
+        }
+        @keyframes slide_animation
+        {
+            0% {left:0px;}
+            10% {left:0px;}
+            20% {left:960px;}
+            30% {left:960px;}
+            40% {left:1440px;}
+            50% {left:1440px;}
+            60% {left:1920px;}
+            70% {left:1920px;}
+            80% {left:0px;}
+            90% {left:0px;}
+            100% {left:0px;}
+        }
+        .slide-images{
+            width: 360px;
+            height: 480px;
+            margin:0 0 0 -240px;
+            position:relative;
+            animation-name: slide_animation;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+
+        }
+        .img-container{
+            height:360px;
+            width:480px;
+            position:relative;
+            float:left;
+            
+        }
+    </style>
+
+-->
